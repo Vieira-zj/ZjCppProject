@@ -1,0 +1,9 @@
+# project properties
+ZjCppProject.cbp
+ZjCppProject.depend
+ZjCppProject.layout
+
+bin/
+obj/
+
+#.gitignore
