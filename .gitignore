@@ -1,7 +1,6 @@
-# project properties
-ZjCppProject.cbp
-ZjCppProject.depend
-ZjCppProject.layout
+#ZjCppProject.cbp
+#ZjCppProject.depend
+#ZjCppProject.layout
 
 bin/
 obj/
