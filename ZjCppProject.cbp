@@ -37,6 +37,10 @@
 			<Option compilerVar="CC" />
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="cpp_callback_demo.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="cpp_char_demo.cpp">
 			<Option virtualFolder="CppDemos01/" />
 			<Option target="Debug" />
@@ -45,9 +49,28 @@
 			<Option virtualFolder="CppDemos01/" />
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="cpp_function_demo.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="cpp_helloworld_main.cpp" />
+		<Unit filename="cpp_io_demo.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="cpp_override_demo.cpp">
 			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="cpp_readfile_demo.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="data.txt">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="list.txt" />
+		<Unit filename="out.txt">
 			<Option target="Debug" />
 		</Unit>
 		<Extensions>
