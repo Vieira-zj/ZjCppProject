@@ -5,7 +5,7 @@
 		<Option title="ZjCppProject" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="CppDemos01\;" />
+		<Option virtualFolders="CppDemos01\;CppDemos02\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/ZjCppProject" prefix_auto="1" extension_auto="1" />
@@ -49,16 +49,27 @@
 			<Option virtualFolder="CppDemos01/" />
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="cpp_delete_demo.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="cpp_function_demo.cpp">
 			<Option virtualFolder="CppDemos01/" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="cpp_helloworld_main.cpp" />
+		<Unit filename="cpp_helloworld_main.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="cpp_io_demo.cpp">
 			<Option virtualFolder="CppDemos01/" />
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="cpp_override_demo.cpp">
+			<Option virtualFolder="CppDemos01/" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="cpp_pointer_demo.cpp">
 			<Option virtualFolder="CppDemos01/" />
 			<Option target="Debug" />
 		</Unit>

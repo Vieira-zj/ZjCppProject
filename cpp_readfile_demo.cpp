@@ -15,7 +15,8 @@ int readfile_main(void)
     if (not in)
     {
         perror("list.txt");
-    } else
+    }
+    else
     {
         string x;
         while (in >> x)

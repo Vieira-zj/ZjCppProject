@@ -9,7 +9,8 @@ Include example for C
 
 void swap_v1(int *val_1, int *val_2)
 {
-    if (val_1 == val_2) {
+    if (val_1 == val_2)
+    {
         return;
     }
 
