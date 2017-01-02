@@ -5,7 +5,6 @@
 		<Option title="ZjCppProject" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="CppDemos01\;CppDemos02\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/ZjCppProject" prefix_auto="1" extension_auto="1" />
@@ -33,57 +32,23 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="c_swap_demo.c">
+		<Unit filename="cpp_demos_01/c_swap_demo.c">
 			<Option compilerVar="CC" />
-			<Option target="Debug" />
 		</Unit>
-		<Unit filename="cpp_callback_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_char_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_const_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_delete_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_function_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_helloworld_main.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_io_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_override_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_pointer_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cpp_readfile_demo.cpp">
-			<Option virtualFolder="CppDemos01/" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="data.txt">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="list.txt" />
-		<Unit filename="out.txt">
-			<Option target="Debug" />
-		</Unit>
+		<Unit filename="cpp_demos_01/cpp_callback_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_char_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_const_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_delete_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_function_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_helloworld_main.cpp" />
+		<Unit filename="cpp_demos_01/cpp_io_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_override_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_pointer_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_readfile_demo.cpp" />
+		<Unit filename="cpp_demos_01/data.txt" />
+		<Unit filename="cpp_demos_01/list.txt" />
+		<Unit filename="cpp_demos_01/out.txt" />
+		<Unit filename="cpp_demos_02/cpp_helloworld_main2.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

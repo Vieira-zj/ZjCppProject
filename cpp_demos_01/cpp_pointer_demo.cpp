@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(void)
+int pointer_main(void)
 {
     using namespace std;
 
