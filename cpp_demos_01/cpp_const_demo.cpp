@@ -19,3 +19,17 @@ int const_main(void)
 
     return 0;
 }
+
+int const_02_main(void)
+//int main(void)
+{
+    const int c = 1;
+    const int *p = &c;
+    int b = c;
+    b = 2;
+
+    cout << "b = " << b << endl;
+    cout << "*p = " << *p << endl;
+
+    return 0;
+}

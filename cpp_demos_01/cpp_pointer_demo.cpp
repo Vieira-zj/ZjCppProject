@@ -1,5 +1,7 @@
 #include <iostream>
 
+int add(int, int);
+
 int pointer_main(void)
 {
     using namespace std;
@@ -20,4 +22,23 @@ int pointer_main(void)
     cout << "Now updates = " << updates << endl;
 
     return 0;
+}
+
+int reference_main(void)
+//int main(void)
+{
+    using namespace std;
+
+    int r = add(1, 3);
+    cout << "r address --> " << &r << endl;
+    cout << "r value --> " << r << endl;
+
+    return 0;
+}
+
+int add(int a, int b)
+{
+    int c = a + b;
+    std::cout << "c address --> " << &c << std::endl;
+    return c;
 }

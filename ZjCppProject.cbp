@@ -35,16 +35,23 @@
 		<Unit filename="cpp_demos_01/c_swap_demo.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="cpp_demos_01/coordin.h" />
 		<Unit filename="cpp_demos_01/cpp_callback_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_char_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_class_this_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_const_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_coordin.cpp" />
+		<Unit filename="cpp_demos_01/cpp_coordin_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_delete_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_function_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_helloworld_main.cpp" />
 		<Unit filename="cpp_demos_01/cpp_io_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_iterator_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_override_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_pointer_demo.cpp" />
 		<Unit filename="cpp_demos_01/cpp_readfile_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_static_class_demo.cpp" />
+		<Unit filename="cpp_demos_01/cpp_swap_demo.cpp" />
 		<Unit filename="cpp_demos_01/data.txt" />
 		<Unit filename="cpp_demos_01/list.txt" />
 		<Unit filename="cpp_demos_01/out.txt" />

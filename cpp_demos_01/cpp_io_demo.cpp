@@ -10,10 +10,10 @@
 #include<string>
 #include<map>
 
-using namespace std;
-
 int io_main(void)
 {
+    using namespace std;
+
     map<string, int> counts;
     string word;
 

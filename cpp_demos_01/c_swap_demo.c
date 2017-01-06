@@ -3,6 +3,8 @@ Include example for C
 2016-11-10
 **/
 
+#include <stdio.h>
+
 #define SWAP_V2(a, b) (a += b, b = a - b, a -= b)
 
 #define SWAP_V3(a, b) {a += b; b = a - b; a -= b;}
@@ -19,7 +21,7 @@ void swap_v1(int *val_1, int *val_2)
     *val_2 = temp;
 }
 
-int swap_main(void)
+int c_swap_main(void)
 {
     int test_1 = 10, test_2 = 100;
 
@@ -31,4 +33,6 @@ int swap_main(void)
     printf("Now the test_1 is %d, test_2 is %d \n", test_1, test_2);
 
     printf("The file full path is %s\n", __FILE__);
+
+    return 0;
 }
