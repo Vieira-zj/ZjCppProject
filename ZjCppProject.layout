@@ -3,7 +3,17 @@
 	<ActiveTarget name="Debug" />
 	<File name="cpp_demos_01\cpp_pointer_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="541" topLine="0" />
+			<Cursor1 position="751" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\c_swap_demo.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="352" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\coordin.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="271" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="cpp_demos_01\cpp_override_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -11,19 +21,54 @@
 			<Cursor1 position="0" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="cpp_demos_01\cpp_helloworld_main.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="cpp_demos_01\cpp_swap_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="90" topLine="0" />
+			<Cursor1 position="1100" topLine="48" />
 		</Cursor>
 	</File>
-	<File name="cpp_demos_01\c_swap_demo.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="cpp_demos_01\cpp_class_this_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="344" topLine="6" />
+			<Cursor1 position="324" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_io_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="196" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_iterator_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="62" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_coordin.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="524" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_coordin_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="108" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_helloworld_main.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="77" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="cpp_demos_02\cpp_helloworld_main2.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="707" topLine="11" />
+			<Cursor1 position="762" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_static_class_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1714" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="cpp_demos_01\cpp_const_demo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="409" topLine="1" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

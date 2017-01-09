@@ -1,3 +1,7 @@
+/**
+Data size example, created at 2017/01/09
+Status: /C++_6th_demo/rightreference.cpp
+**/
 #include <iostream>
 
 using namespace std;
@@ -30,7 +34,7 @@ int hello_world_main2(void)
     cout << "The size of array: " << sizeof(arr) << endl;  // 16
     cout << "The size of double: " << sizeof(d) << endl;  // 8
     cout << "The size of test_data: " << sizeof(test_data) << endl;  // 8 + 16 = 24
-    cout << "The size of test_data_2: " << sizeof(test_data_2) << endl;  // 8 + 8 + 16 = 32
+    cout << "The size of test_data_2: " << sizeof(test_data_2) << endl;  // 8 + 16 + 8 = 32
 
     return 0;
 }
