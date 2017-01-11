@@ -1,6 +1,6 @@
 /**
 Data size example, created at 2017/01/09
-Status: /C++_6th_demo/rightreference.cpp
+Status: /C++_7th_demo/constvar.cpp
 **/
 #include <iostream>
 

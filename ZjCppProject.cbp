@@ -55,9 +55,13 @@
 		<Unit filename="cpp_demos_01/data.txt" />
 		<Unit filename="cpp_demos_01/list.txt" />
 		<Unit filename="cpp_demos_01/out.txt" />
+		<Unit filename="cpp_demos_02/cpp_arr_parms_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_class_dirver_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_enum_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_helloworld_main2.cpp" />
+		<Unit filename="cpp_demos_02/cpp_r_reference_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_sizeof_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_template_demo.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
