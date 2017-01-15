@@ -28,7 +28,8 @@ void print_arr_3(int (&arr)[5])
 //    cout << "array size ---> " << sizeof(arr) << endl;
 //}
 
-int main(void)
+int arr_parms_main(void)
+//int main(void)
 {
     int tmp_arr[5] = {1,2,3,4,5};
     print_arr_1(tmp_arr);

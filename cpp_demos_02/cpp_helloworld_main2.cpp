@@ -1,6 +1,6 @@
 /**
 Data size example, created at 2017/01/09
-Status: /C++_7th_demo/constvar.cpp
+Status: /C++_7th_demo/enum.cpp
 **/
 #include <iostream>
 
