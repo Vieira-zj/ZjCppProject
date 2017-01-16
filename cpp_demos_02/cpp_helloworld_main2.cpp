@@ -1,6 +1,6 @@
 /**
-Data size example, created at 2017/01/09
-Status: /C++_7th_demo/enum.cpp
+Data size example, created at 2017/1/9
+Status: /C++_8th_demo/virtual_demo3.cpp
 **/
 #include <iostream>
 

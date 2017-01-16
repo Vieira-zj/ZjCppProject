@@ -56,13 +56,21 @@
 		<Unit filename="cpp_demos_01/list.txt" />
 		<Unit filename="cpp_demos_01/out.txt" />
 		<Unit filename="cpp_demos_02/cpp_arr_parms_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_auto_ptr_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_class_dirver_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_const_var_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_constructor_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_constructor_demo2.cpp" />
 		<Unit filename="cpp_demos_02/cpp_enum_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_enum_demo2.cpp" />
 		<Unit filename="cpp_demos_02/cpp_helloworld_main2.cpp" />
 		<Unit filename="cpp_demos_02/cpp_r_reference_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_reference_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_sizeof_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_swap_demo2.cpp" />
 		<Unit filename="cpp_demos_02/cpp_template_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_vir_fn_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_vir_fn_demo2.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -97,7 +97,7 @@
 	<fstream>
 	<string>
 
-1484499158 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_helloworld_main2.cpp
+1484578911 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_helloworld_main2.cpp
 	<iostream>
 
 1483976904 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_01\cpp_iterator_demo.cpp
@@ -142,6 +142,28 @@
 1484499566 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_arr_parms_demo.cpp
 	<iostream>
 
-1484499448 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_const_var_demo.cpp
+1484500082 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_const_var_demo.cpp
+	<iostream>
+
+1484574874 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_enum_demo2.cpp
+	<iostream>
+
+1484576418 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_reference_demo.cpp
+	<iostream>
+
+1484576837 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_swap_demo2.cpp
+	<iostream>
+
+1484577547 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo.cpp
+	<iostream>
+
+1484578078 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_auto_ptr_demo.cpp
+	<iostream>
+	<memory>
+
+1484580215 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo.cpp
+	<iostream>
+
+1484580297 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo2.cpp
 	<iostream>
 
