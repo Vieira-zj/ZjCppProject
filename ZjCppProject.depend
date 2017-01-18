@@ -97,7 +97,7 @@
 	<fstream>
 	<string>
 
-1484578911 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_helloworld_main2.cpp
+1484752467 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_helloworld_main2.cpp
 	<iostream>
 
 1483976904 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_01\cpp_iterator_demo.cpp
@@ -165,5 +165,17 @@
 	<iostream>
 
 1484580297 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo2.cpp
+	<iostream>
+
+1484751416 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo2.cpp
+	<iostream>
+
+1484752402 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo3.cpp
+	<iostream>
+
+1484752394 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo4.cpp
+	<stdio.h>
+
+1484752374 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_cls_var_init_demo.cpp
 	<iostream>
 

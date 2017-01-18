@@ -57,7 +57,9 @@
 		<Unit filename="cpp_demos_01/out.txt" />
 		<Unit filename="cpp_demos_02/cpp_arr_parms_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_auto_ptr_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_auto_ptr_demo2.cpp" />
 		<Unit filename="cpp_demos_02/cpp_class_dirver_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_cls_var_init_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_const_var_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_constructor_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_constructor_demo2.cpp" />
@@ -71,6 +73,8 @@
 		<Unit filename="cpp_demos_02/cpp_template_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_vir_fn_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_vir_fn_demo2.cpp" />
+		<Unit filename="cpp_demos_02/cpp_vir_fn_demo3.cpp" />
+		<Unit filename="cpp_demos_02/cpp_vir_fn_demo4.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

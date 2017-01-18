@@ -1,6 +1,6 @@
 /**
 Data size example, created at 2017/1/9
-Status: /C++_8th_demo/virtual_demo3.cpp
+Status: /C++_9th_demo/auto_ptr_demo.cpp
 **/
 #include <iostream>
 

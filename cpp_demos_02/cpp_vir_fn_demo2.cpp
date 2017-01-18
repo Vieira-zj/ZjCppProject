@@ -56,7 +56,7 @@ public:
     }
 };
 
-int virtual_fn_demo2(void)
+int virtual_fn_main2(void)
 //int main(void)
 {
     Base3 base_obj;
