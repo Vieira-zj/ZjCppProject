@@ -10,7 +10,7 @@ public:
     Test():m_value(0) { std::cout << "Test::Test()" << std::endl; }
     Test(int x):m_value(x) { std::cout << "Test::Test(int)" << std::endl; }
     Test(const Test &t):m_value(t.m_value) { std::cout << "Test::Copy" << std::endl; }
-    Test & operator=(const Test &t) { m_value = t.m_value; std::cout << "Test::=" << std::endl; }
+    Test & operator=(const Test &t) { m_value = t.m_value; std::cout << "Test::=" << std::endl; return *this; }
     ~Test() { std::cout << "Test::~Test destructor" << std::endl; }
 };
 
@@ -38,8 +38,8 @@ void doSomething3(Test myPtr) {
     myPtr.m_value = 11;
 }
 
-
-int main(void)
+int auto_ptr_main2(void)
+//int main(void)
 {
     // example 01
     //A3 a;

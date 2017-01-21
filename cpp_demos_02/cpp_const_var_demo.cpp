@@ -17,7 +17,7 @@ int my_add_const(const int &a, const int &b)
     return a + b;
 }
 
-int const_var_main()
+int const_var_main(void)
 //int main(void)
 {
     cout << my_add_const(1, 2) << endl;
@@ -30,7 +30,7 @@ int const_var_main()
     //cout << my_add_r(x, y) << endl;
     cout << my_add_const(x, y) << endl;
 
-    const *p = &x;
+    const int *p = &x;
     cout << my_add(*p, *p) << endl;
     cout << my_add_const(*p, *p) << endl;
 

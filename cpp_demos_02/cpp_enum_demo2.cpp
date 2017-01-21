@@ -16,7 +16,7 @@ typedef enum
     BLUE
 } COLOR3;
 
-enum_main2(void)
+int enum_main2(void)
 //int main(void)
 {
     int my_color = YELLOW;

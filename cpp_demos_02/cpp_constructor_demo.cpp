@@ -52,7 +52,7 @@ public:
         }
 };
 
-constructor_main(void)
+int constructor_main(void)
 //int main(void)
 {
     DerivedFinal df;

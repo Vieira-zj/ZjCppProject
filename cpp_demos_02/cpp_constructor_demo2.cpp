@@ -16,6 +16,7 @@ public:
     {
         foo();
     }
+    virtual ~Base2() {}
 };
 
 class Derived2: public Base2

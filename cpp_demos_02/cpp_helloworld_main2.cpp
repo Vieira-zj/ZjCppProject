@@ -1,6 +1,5 @@
 /**
 Data size example, created at 2017/1/9
-Status: /C++_9th_demo/auto_ptr_demo.cpp
 **/
 #include <iostream>
 
@@ -21,8 +20,8 @@ typedef struct
     int test_2;
 } test_data_2;
 
-int hello_world_main2(void)
-//int main(void)
+//int hello_world_main2(void)
+int main(void)
 {
     double d = 2000;
     int arr[4] = {1,2,3,4};
