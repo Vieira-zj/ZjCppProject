@@ -7,7 +7,8 @@ extern int my_external_int;  // from demo01
 
 int my_external_demo_add(int num);
 
-int main(void)
+int external_main(void)
+//int main(void)
 {
     cout << "my_external_int: " << my_external_int << endl;
     cout << "my_internal_static_int: " << my_external_demo_add(my_internal_static_int) << endl;
