@@ -97,7 +97,7 @@
 	<fstream>
 	<string>
 
-1484752467 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_helloworld_main2.cpp
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_helloworld_main2.cpp
 	<iostream>
 
 1483976904 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_01\cpp_iterator_demo.cpp
@@ -127,7 +127,7 @@
 1483978096 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_class_dirver_demo.cpp
 	<iostream>
 
-1483977433 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_enum_demo.cpp
+1485094605 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_enum_demo.cpp
 	<iostream>
 
 1484146094 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_r_reference_demo.cpp
@@ -142,10 +142,10 @@
 1484499566 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_arr_parms_demo.cpp
 	<iostream>
 
-1484500082 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_const_var_demo.cpp
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_const_var_demo.cpp
 	<iostream>
 
-1484574874 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_enum_demo2.cpp
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_enum_demo2.cpp
 	<iostream>
 
 1484576418 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_reference_demo.cpp
@@ -161,10 +161,10 @@
 	<iostream>
 	<memory>
 
-1484580215 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo.cpp
+1485094810 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo.cpp
 	<iostream>
 
-1484580297 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo2.cpp
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_constructor_demo2.cpp
 	<iostream>
 
 1484751416 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo2.cpp
@@ -173,7 +173,7 @@
 1484752402 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo3.cpp
 	<iostream>
 
-1484752394 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo4.cpp
+1485074625 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_vir_fn_demo4.cpp
 	<stdio.h>
 
 1484752374 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_cls_var_init_demo.cpp
@@ -334,4 +334,40 @@
 	"cpp_external_header_demo.h"
 
 1485053417 e:\github_workspace\zjcppproject\cpp_demos_03\cpp_external_header_demo.h
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_auto_ptr_demo2.cpp
+	<iostream>
+	<memory>
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_external_demo01.cpp
+	<iostream>
+	"cpp_external_header_demo.h"
+
+1485072304 d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_external_header_demo.h
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_external_demo02.cpp
+	<iostream>
+	"cpp_external_header_demo.h"
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_my_test_01.cpp
+	<iostream>
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_my_test_02.cpp
+	<iostream>
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_my_test_03.cpp
+	<iostream>
+
+1485072304 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_my_test_04.cpp
+	<iostream>
+
+1485078451 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_string_demo.cpp
+	<iostream>
+	<string.h>
+	"cpp_string_header_demo.h"
+
+1485075395 d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_string_header_demo.h
+
+1485094729 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_class_derived_demo.cpp
+	<iostream>
 

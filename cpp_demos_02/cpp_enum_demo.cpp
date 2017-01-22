@@ -7,7 +7,7 @@ enum COLOR
     blue
 };
 
-enum DAYS
+enum class DAYS
 {
     monday,
     tuesday,
@@ -19,15 +19,10 @@ int enum_main(void)
 {
     COLOR c = red;
     std::cout << "c value: " << c << std::endl;
-    if (c == red)
-//    if (c == monday)
-    {
-        std::cout << "the color is red." << std::endl;
-    }
-    else
-    {
-        std::cout << "the color is Monday." << std::endl;
-    }
+    if (c == red) std::cout << "the color is red." << std::endl;
+
+    DAYS d = DAYS::monday;
+    if (d == DAYS::monday) std::cout << "the day is Monday." << std::endl;
 
     return 0;
 }

@@ -23,8 +23,8 @@ class C : public B
     void v_fn3() { printf("pure virtual fn in C\n"); }
 };
 
-//int virtual_fn_main4(void)
-int main(void)
+int virtual_fn_main4(void)
+//int main(void)
 {
     A *a = new C();
     a->fn();

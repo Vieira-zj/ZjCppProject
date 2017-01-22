@@ -41,7 +41,7 @@ public:
 //    }
 };
 
-int class_driver_main(void)
+int class_derived_main(void)
 //int main(void)
 {
     Bottom b;

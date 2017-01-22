@@ -58,7 +58,7 @@
 		<Unit filename="cpp_demos_02/cpp_arr_parms_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_auto_ptr_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_auto_ptr_demo2.cpp" />
-		<Unit filename="cpp_demos_02/cpp_class_dirver_demo.cpp" />
+		<Unit filename="cpp_demos_02/cpp_class_derived_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_cls_var_init_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_const_var_demo.cpp" />
 		<Unit filename="cpp_demos_02/cpp_constructor_demo.cpp" />
@@ -78,10 +78,13 @@
 		<Unit filename="cpp_demos_03/cpp_external_demo01.cpp" />
 		<Unit filename="cpp_demos_03/cpp_external_demo02.cpp" />
 		<Unit filename="cpp_demos_03/cpp_external_header_demo.h" />
+		<Unit filename="cpp_demos_03/cpp_helloworld_demo3.cpp" />
 		<Unit filename="cpp_demos_03/cpp_my_test_01.cpp" />
 		<Unit filename="cpp_demos_03/cpp_my_test_02.cpp" />
 		<Unit filename="cpp_demos_03/cpp_my_test_03.cpp" />
 		<Unit filename="cpp_demos_03/cpp_my_test_04.cpp" />
+		<Unit filename="cpp_demos_03/cpp_string_demo.cpp" />
+		<Unit filename="cpp_demos_03/cpp_string_header_demo.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

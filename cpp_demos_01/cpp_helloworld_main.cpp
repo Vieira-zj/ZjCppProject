@@ -1,5 +1,5 @@
 /**
-My hello world example, at 2016-11-10
+My hello world example, created at 2016-11-10
 **/
 
 #include <stdio.h>
