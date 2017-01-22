@@ -75,6 +75,9 @@
 		<Unit filename="cpp_demos_02/cpp_vir_fn_demo2.cpp" />
 		<Unit filename="cpp_demos_02/cpp_vir_fn_demo3.cpp" />
 		<Unit filename="cpp_demos_02/cpp_vir_fn_demo4.cpp" />
+		<Unit filename="cpp_demos_03/cpp_external_demo01.cpp" />
+		<Unit filename="cpp_demos_03/cpp_external_demo02.cpp" />
+		<Unit filename="cpp_demos_03/cpp_external_header_demo.h" />
 		<Unit filename="cpp_demos_03/cpp_my_test_01.cpp" />
 		<Unit filename="cpp_demos_03/cpp_my_test_02.cpp" />
 		<Unit filename="cpp_demos_03/cpp_my_test_03.cpp" />
