@@ -3,7 +3,7 @@ Hello world demo, create at 2017/1/22
 */
 #include <iostream>
 
-int main(void)
+int hello_world_main3(void)
 {
     using namespace std;
 

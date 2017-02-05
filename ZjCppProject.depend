@@ -71,7 +71,7 @@
 1483976877 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_01\cpp_function_demo.cpp
 	<iostream>
 
-1483976884 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_01\cpp_helloworld_main.cpp
+1485096244 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_01\cpp_helloworld_main.cpp
 	<stdio.h>
 	<iostream>
 	<cstring>
@@ -369,5 +369,11 @@
 1485075395 d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_string_header_demo.h
 
 1485094729 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_02\cpp_class_derived_demo.cpp
+	<iostream>
+
+1486304865 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_helloworld_demo3.cpp
+	<iostream>
+
+1486304847 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_class_vars_init_demo.cpp
 	<iostream>
 
