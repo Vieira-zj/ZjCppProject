@@ -1,21 +1,3 @@
-/**
-Bubble Sort
-
-Sort01
-Before sort: {3,1,5,7,2,4,9,6}
-After sort:
-1 => {1 ,3,5,7,2,4,9,6}
-2 => {1,2 ,5,7,3,4,9,6}
-3 => {1,2 ,3,7,5,4,9,6}
-
-Sort02
-Before sort: {3,1,5,7,2,4,9,6}
-After sort:
-1 => {1,3,5,2,4,7,6, 9}
-2 => {1,3,2,4,5,6, 7,9}
-3 => {1,2,3,4,5, 6,7,9}
-*/
-
 #include <iostream>
 
 using namespace std;
@@ -30,6 +12,14 @@ void print_array_value(const int *a, int length)
     cout << *(a + length - 1) << endl;
 }
 
+/**
+Before sort: {3,1,5,7,2,4,9,6}
+After sort:
+1 => {1 ,3,5,7,2,4,9,6}
+2 => {1,2 ,5,7,3,4,9,6}
+3 => {1,2 ,3,7,5,4,9,6}
+...
+*/
 void my_sort(int *a, int length)
 {
     for (int i = 0; i < (length - 1); ++i)
@@ -49,6 +39,14 @@ void my_sort(int *a, int length)
     }
 }
 
+/**
+Before sort: {3,1,5,7,2,4,9,6}
+After sort:
+1 => {1,3,5,2,4,7,6, 9}
+2 => {1,3,2,4,5,6, 7,9}
+3 => {1,2,3,4,5, 6,7,9}
+...
+*/
 void bubble_sort(int *a, int length)
 {
     for (int i = 0; i < (length - 1); ++i)
