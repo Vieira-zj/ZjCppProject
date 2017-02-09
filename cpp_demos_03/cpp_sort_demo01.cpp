@@ -1,3 +1,6 @@
+/**
+Exchange Sort
+*/
 #include <iostream>
 
 using namespace std;
@@ -12,57 +15,110 @@ void print_array_value(const int *a, int length)
     cout << *(a + length - 1) << endl;
 }
 
+void print_array_value(const int *a, int low, int high)
+{
+    cout << "value: ";
+    for (int i = low; i < high; ++i)
+    {
+        cout << *(a + i) << ",";
+    }
+    cout << *(a + high) << endl;
+}
+
 /**
 Before sort: {3,1,5,7,2,4,9,6}
 After sort:
-1 => {1 ,3,5,7,2,4,9,6}
-2 => {1,2 ,5,7,3,4,9,6}
-3 => {1,2 ,3,7,5,4,9,6}
+1 => {1 | ,3,5,7,2,4,9,6}
+2 => {1,2 | ,5,7,3,4,9,6}
+3 => {1,2,3 | ,7,5,4,9,6}
 ...
 */
 void my_sort(int *a, int length)
 {
     for (int i = 0; i < (length - 1); ++i)
     {
+        bool isExchange = false;
         for (int j = i + 1; j < length; ++j)
         {
             // get min value
             if (a[i] > a[j])
             {
+                isExchange = true;
                 int tmp_int = a[i];
                 a[i] = a[j];
                 a[j] = tmp_int;
             }
         }
+        if (!isExchange) break;
         cout << "at iteration: " << (i + 1) << endl;
         print_array_value(a, length);
     }
 }
 
 /**
+Bubble Sort
 Before sort: {3,1,5,7,2,4,9,6}
 After sort:
-1 => {1,3,5,2,4,7,6, 9}
-2 => {1,3,2,4,5,6, 7,9}
-3 => {1,2,3,4,5, 6,7,9}
+1 => {1,3,5,2,4,7,6, | 9}
+2 => {1,3,2,4,5,6, | 7,9}
+3 => {1,2,3,4,5, | 6,7,9}
 ...
 */
 void bubble_sort(int *a, int length)
 {
     for (int i = 0; i < (length - 1); ++i)
     {
+        bool isExchange = false;
         for (int j = 0; j < (length - i - 1); ++j)
         {
             // get max value by compare j and j+1 element
             if (a[j] > a[j + 1])
             {
+                isExchange = true;
                 int tmp = a[j];
                 a[j] = a[j + 1];
                 a[j + 1] = tmp;
             }
         }
+        if (!isExchange) break;
         cout << "at iteration: " << (i + 1) << endl;
         print_array_value(a, length);
+    }
+}
+
+
+/**
+Quick Sort
+*/
+void quick_sort_swap(int &x, int &y)
+{
+    int tmp_int = x;
+    x = y;
+    y = tmp_int;
+}
+
+int quick_sort_partition(int *a, int low, int high)
+{
+    int privotKey = a[low];
+    while (low < high)
+    {
+        while (low < high && a[high] >= privotKey) --high;
+        quick_sort_swap(a[low], a[high]);
+        while (low < high && a[low] <= privotKey) ++low;
+        quick_sort_swap(a[low], a[high]);
+    }
+
+    return low;
+}
+
+void quick_sort(int *a, int low, int high)
+{
+    if (low < high)
+    {
+        int privotLoc = quick_sort_partition(a, low, high);
+        print_array_value(a, low, high);
+        quick_sort(a, low, (privotLoc - 1));
+        quick_sort(a, (privotLoc + 1), high);
     }
 }
 
@@ -76,7 +132,8 @@ int main(void)
 
     cout << "Sorting" << endl;
     //my_sort(tmp_arr, arr_length);
-    bubble_sort(tmp_arr, arr_length);
+    //bubble_sort(tmp_arr, arr_length);
+    quick_sort(tmp_arr, 0, (arr_length - 1));
 
     cout << "After sort: " << endl;
     print_array_value(tmp_arr, arr_length);
