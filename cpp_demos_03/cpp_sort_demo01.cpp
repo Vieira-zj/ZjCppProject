@@ -5,14 +5,14 @@ Exchange Sort
 
 using namespace std;
 
-void print_array_value(const int *a, int length)
+void print_array_value(const int *a, int arr_len)
 {
     cout << "value: ";
-    for (int i = 0; i < (length - 1); ++i)
+    for (int i = 0; i < (arr_len - 1); ++i)
     {
         cout << *(a + i) << ",";
     }
-    cout << *(a + length - 1) << endl;
+    cout << *(a + arr_len - 1) << endl;
 }
 
 void print_array_value(const int *a, int low, int high)
@@ -33,7 +33,7 @@ After sort:
 3 => {1,2,3 | ,7,5,4,9,6}
 ...
 */
-void my_sort(int *a, int length)
+void my_exchange_sort(int *a, int length)
 {
     for (int i = 0; i < (length - 1); ++i)
     {
@@ -90,7 +90,7 @@ void bubble_sort(int *a, int length)
 /**
 Quick Sort
 */
-void quick_sort_swap(int &x, int &y)
+void swap_by_reference(int &x, int &y)
 {
     int tmp_int = x;
     x = y;
@@ -103,9 +103,9 @@ int quick_sort_partition(int *a, int low, int high)
     while (low < high)
     {
         while (low < high && a[high] >= privotKey) --high;
-        quick_sort_swap(a[low], a[high]);
+        swap_by_reference(a[low], a[high]);
         while (low < high && a[low] <= privotKey) ++low;
-        quick_sort_swap(a[low], a[high]);
+        swap_by_reference(a[low], a[high]);
     }
 
     return low;
@@ -122,7 +122,8 @@ void quick_sort(int *a, int low, int high)
     }
 }
 
-int main(void)
+//int main(void)
+int sort_main(void)
 {
     int tmp_arr[] = {3,1,5,7,2,4,9,6};
     int arr_length = 8;
@@ -131,7 +132,7 @@ int main(void)
     print_array_value(tmp_arr, arr_length);
 
     cout << "Sorting" << endl;
-    //my_sort(tmp_arr, arr_length);
+    //my_exchange_sort(tmp_arr, arr_length);
     //bubble_sort(tmp_arr, arr_length);
     quick_sort(tmp_arr, 0, (arr_length - 1));
 
