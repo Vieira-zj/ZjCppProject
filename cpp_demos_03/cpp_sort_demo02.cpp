@@ -6,34 +6,47 @@ Insert Sort
 void print_array_value(const int *a, int arr_len);
 void swap_by_reference(int &x, int &y);
 
-void my_insert_sort(int *a, int arr_len)
+
+/**
+my_insert_sort
+*/
+// arr[0] -> arr[end_pos - 1] is a sorted arr, and insert arr[end_pos] by exchange
+void insert_last_value_in_sorted_arr(int *arr, int end_pos)
 {
-    for (int i = 1; i < arr_len; ++i)
+    for (int j = 0; j < end_pos; ++j)
     {
-        for (int j = 0; j < (i + 1); ++j)
+        if (arr[end_pos] < arr[j])
         {
-            if (a[i] < a[j])
-            {
-                swap_by_reference(a[i], a[j]);
-            }
+            swap_by_reference(arr[end_pos], arr[j]);
         }
-        print_array_value(a, arr_len);
     }
 }
 
-void move_specified_ele_into_sorted_arr(int *a, int position)
+void my_insert_sort(int *arr, int arr_len)
 {
-        int tmp_pos = position;
-        if (a[position] < a[tmp_pos - 1])
+    for (int i = 1; i < arr_len; ++i)
+    {
+        insert_last_value_in_sorted_arr(arr, i);
+        print_array_value(arr, arr_len);
+    }
+}
+
+
+/**
+insert_sort
+*/
+void move_specified_ele_into_sorted_arr(int *a, int pos)
+{
+    if (a[pos] < a[pos - 1])
+    {
+        int tmp_int = a[pos];
+        while (tmp_int < a[pos - 1])
         {
-            int tmp_int = a[position];
-            while (tmp_int < a[tmp_pos - 1])
-            {
-                a[tmp_pos] = a[tmp_pos - 1];  // move element forward
-                if (--tmp_pos == 0) break;
-            }
-            a[tmp_pos] = tmp_int;
+            a[pos] = a[pos - 1];  // move element forward
+            if (--pos == 0) break;
         }
+        a[pos] = tmp_int;
+    }
 }
 
 void insert_sort(int *a, int arr_len)
@@ -46,8 +59,9 @@ void insert_sort(int *a, int arr_len)
     }
 }
 
+
 /**
-Shell Sort
+my_shell_insert_sort
 */
 void my_shell_insert_sort(int *arr, int arr_len, int dk)
 {
@@ -60,6 +74,10 @@ void my_shell_insert_sort(int *arr, int arr_len, int dk)
     }
 }
 
+
+/**
+shell_insert_sort
+*/
 void shell_insert_sort(int *arr, int arr_len, int dk)
 {
     for (int i = dk; i < arr_len; i++)
@@ -71,13 +89,15 @@ void shell_insert_sort(int *arr, int arr_len, int dk)
     }
 }
 
-void shell_sort(int *arr, int arr_len)
+typedef void(*pFunc)(int *arr, int arr_len, int dk);
+
+void shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
 {
     int dk = arr_len / 2;
     int i = 0;
     while (dk >= 1)
     {
-        my_shell_insert_sort(arr, arr_len, dk);
+        p_shell_insert_sort_fn(arr, arr_len, dk);
         dk = dk / 2;
         printf("At iteration => %d, ", ++i);
         print_array_value(arr, arr_len);
@@ -97,7 +117,7 @@ int main(void)
     //my_insert_sort(tmp_arr, arr_length);
     //insert_sort(tmp_arr, arr_length);
 
-    shell_sort(tmp_arr, arr_length);
+    shell_sort(tmp_arr, arr_length, my_shell_insert_sort);
 
     printf("After sort: \n");
     print_array_value(tmp_arr, arr_length);
