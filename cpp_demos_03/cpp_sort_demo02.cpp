@@ -80,35 +80,30 @@ shell_insert_sort
 */
 void shell_insert_sort(int *arr, int arr_len, int dk)
 {
-    for (int i = dk; i < arr_len; i++)
-    {
-        if (arr[i] < arr[i - dk])
-        {
-            // TODO: move element to top
-        }
-    }
+    // TODO: 2/17
 }
 
 typedef void(*pFunc)(int *arr, int arr_len, int dk);
 
 void shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
 {
-    int dk = arr_len / 2;
+    int dk = (arr_len + 1) / 2;
     int i = 0;
-    while (dk >= 1)
+    while (dk > 1)
     {
         p_shell_insert_sort_fn(arr, arr_len, dk);
-        dk = dk / 2;
-        printf("At iteration => %d, ", ++i);
+        printf("At iteration => %d, and dk => %d: ", ++i, dk);
         print_array_value(arr, arr_len);
+        dk = (dk + 1) / 2;
     }
+    p_shell_insert_sort_fn(arr, arr_len, 1);
 }
 
-int main(void)
-//int sort_main2(void)
+//int main(void)
+int sort_main2(void)
 {
-    int tmp_arr[] = {49,38,65,97,76,13,27,49};
-    int arr_length = 8;
+    int tmp_arr[] = {49,38,65,97,76,13,27,49,55,4};
+    int arr_length = 10;
 
     printf("Before sort: \n");
     print_array_value(tmp_arr, arr_length);
