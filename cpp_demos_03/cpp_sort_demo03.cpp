@@ -39,7 +39,8 @@ void select_sort(int *arr, int arr_len)
 }
 
 
-int main(void)
+//int main(void)
+int sort_main3(void)
 {
     int tmp_arr[] = {49,38,65,97,76,13,27,49,55,4};
     int arr_length = 10;

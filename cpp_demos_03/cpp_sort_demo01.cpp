@@ -118,10 +118,13 @@ int quick_sort_partition(int *arr, int low, int high)
     while (low < high)
     {
         while (low < high && arr[high] >= privotKey) --high;
-        swap_by_reference(arr[low], arr[high]);
+        //swap_by_reference(arr[low], arr[high]);
+        arr[low] = arr[high];
         while (low < high && arr[low] <= privotKey) ++low;
-        swap_by_reference(arr[low], arr[high]);
+        //swap_by_reference(arr[low], arr[high]);
+        arr[high] = arr[low];
     }
+    arr[low] = privotKey;
 
     return low;  // low == high
 }
