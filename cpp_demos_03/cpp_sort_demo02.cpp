@@ -81,18 +81,9 @@ void my_shell_insert_sort(int *arr, int arr_len, int dk)
     }
 }
 
-
-/**
-shell_insert_sort
-*/
-void shell_insert_sort(int *arr, int arr_len, int dk)
-{
-    // TODO: 2/17
-}
-
 typedef void(*pFunc)(int *arr, int arr_len, int dk);
 
-void shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
+void my_shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
 {
     int dk = (arr_len + 1) / 2;
     int i = 0;
@@ -106,20 +97,56 @@ void shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
     p_shell_insert_sort_fn(arr, arr_len, 1);
 }
 
+/**
+shell_insert_sort
+*/
+void shell_insert_sort(int *arr, int arr_len, int dk)
+{
+    for (int i = 0; i < dk; i++) {  // for each arr by dk
+        for (int j = i + dk; j < arr_len; j += dk) {  // start from 2nd ele
+            for (int k = j - dk; k >= i; k -= dk) {
+                if (arr[k] > arr[k + dk]) {
+                    swap_by_reference(arr[k], arr[k + dk]);
+                }
+                else {
+                    break;
+                }
+            }
+        }
+    }
+}
+
+void shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
+{
+    int dk = arr_len / 2;
+    int i = 0;
+    while (dk > 0)
+    {
+        shell_insert_sort(arr, arr_len, dk);
+        printf("At iteration => %d, and dk => %d: ", ++i, dk);
+        print_array_value(arr, arr_len);
+        dk /= 2;
+    }
+}
+
 int main(void)
 //int sort_main2(void)
 {
-    int tmp_arr[] = {49,38,65,97,76,13,27,49,55,4};
-    int arr_length = 10;
+//    int tmp_arr[] = {49,38,65,97,76,13,27,49,55,4};
+//    int arr_length = 10;
+
+    int tmp_arr[] = {49,38,65,97,76,13,27,55,4};
+    int arr_length = 9;
 
     printf("Before sort: \n");
     print_array_value(tmp_arr, arr_length);
 
     printf("Sorting:\n");
-    my_insert_sort(tmp_arr, arr_length);
+    //my_insert_sort(tmp_arr, arr_length);
     //insert_sort(tmp_arr, arr_length);
 
-    //shell_sort(tmp_arr, arr_length, my_shell_insert_sort);
+    //my_shell_sort(tmp_arr, arr_length, my_shell_insert_sort);
+    shell_sort(tmp_arr, arr_length, my_shell_insert_sort);
 
     printf("After sort: \n");
     print_array_value(tmp_arr, arr_length);
