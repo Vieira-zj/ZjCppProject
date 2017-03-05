@@ -129,8 +129,8 @@ void shell_sort(int *arr, int arr_len, pFunc p_shell_insert_sort_fn)
     }
 }
 
-int main(void)
-//int sort_main2(void)
+//int main(void)
+int sort_main2(void)
 {
 //    int tmp_arr[] = {49,38,65,97,76,13,27,49,55,4};
 //    int arr_length = 10;

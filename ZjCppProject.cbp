@@ -88,6 +88,7 @@
 		<Unit filename="cpp_demos_03/cpp_sort_demo01.cpp" />
 		<Unit filename="cpp_demos_03/cpp_sort_demo02.cpp" />
 		<Unit filename="cpp_demos_03/cpp_sort_demo03.cpp" />
+		<Unit filename="cpp_demos_03/cpp_sort_demo04.cpp" />
 		<Unit filename="cpp_demos_03/cpp_string_demo.cpp" />
 		<Unit filename="cpp_demos_03/cpp_string_header_demo.h" />
 		<Extensions>
