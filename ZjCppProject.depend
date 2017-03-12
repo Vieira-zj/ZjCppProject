@@ -374,8 +374,9 @@
 1486304865 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_helloworld_demo3.cpp
 	<iostream>
 
-1486307650 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_class_vars_init_demo.cpp
+1489333990 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_class_vars_init_demo.cpp
 	<iostream>
+	<stdio.h>
 
 1487775901 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_sort_demo01.cpp
 	<iostream>
@@ -383,9 +384,12 @@
 1488728029 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_sort_demo02.cpp
 	<stdio.h>
 
-1486999196 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_cast_demo.cpp
+1489330039 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_cast_demo.cpp
 	<stdio.h>
 
-1488728058 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_sort_demo03.cpp
+1489328829 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_sort_demo03.cpp
+	<stdio.h>
+
+1489328845 source:d:\github_workspace\codeblocks_workspace\zjcppproject\cpp_demos_03\cpp_sort_demo04.cpp
 	<stdio.h>
 

@@ -44,15 +44,15 @@ int cast_main(void)
     CastTestParent *p_parent = new CastTestParent;
     p_parent->ShowMe();
 
-    printf("\nDown Cast:\n");
+    printf("\nUp Cast:\n");
     CastTestParent *p_child_to_parent = p_child;
     p_child_to_parent->ShowMe();
 
-    printf("Down cast by static:\n");
+    printf("Up cast by static:\n");
     CastTestParent *p_static_parent = static_cast<CastTestParent *>(p_child);
     p_static_parent->ShowMe();
 
-    printf("Down cast by dynamic:\n");
+    printf("Up cast by dynamic:\n");
     CastTestParent *p_dyn_parent = dynamic_cast<CastTestParent *>(p_child);
     p_dyn_parent->ShowMe();
 
@@ -61,25 +61,30 @@ int cast_main(void)
     CastTestParent *p_void_child = (CastTestParent *)p_void;
     p_void_child->ShowMe();
 
-    printf("\nUp Cast:\n");
+    printf("\nDown Cast:\n");
     // Error
 //    CastTestChild *p_parent_to_child = p_parent;
 //    p_parent_to_child->ShowMe();
 
-    printf("Up cast by ():\n");
+    printf("Down cast by ():\n");
     CastTestChild *p_cast_child = (CastTestChild *)p_parent;
     p_cast_child->ShowMe();
 
-    printf("Up cast by static:\n");
+    printf("Down cast by static:\n");
     CastTestChild *p_static_child = static_cast<CastTestChild *>(p_parent);
     p_static_child->ShowMe();
 
-    // Error for up cast by dynamic_cast
+    // Error for down cast by dynamic_cast
 //    CastTestChild *p_dyn_child = dynamic_cast<CastTestChild *>(p_parent);
 //    p_dyn_child->ShowMe();
 
     delete p_child;
     delete p_parent;
+
+    printf("\nCast By Reference:\n");
+    CastTestChild child;
+    CastTestParent &r_parent_as_child = child;
+    r_parent_as_child.ShowMe();
 
     return 0;
 }

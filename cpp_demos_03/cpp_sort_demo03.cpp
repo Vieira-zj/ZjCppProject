@@ -38,7 +38,6 @@ void select_sort(int *arr, int arr_len)
     }
 }
 
-
 //int main(void)
 int sort_main3(void)
 {

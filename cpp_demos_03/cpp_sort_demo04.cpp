@@ -19,7 +19,8 @@ int get_first_index_for_sub_string(char target_str[], int target_len, char sub_s
     return -1;
 }
 
-int main(void)
+int sort_main4()
+//int main(void)
 {
     // get the first index for sub string in target string
     char target[] = {'x','y','y','y','y','b','c','x'};
