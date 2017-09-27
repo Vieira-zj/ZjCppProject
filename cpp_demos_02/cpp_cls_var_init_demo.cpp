@@ -7,12 +7,17 @@ class A2
 private:
     int value;
 public:
-    A2() { cout << "int A default constructor." << endl; }
-    A2(int x)
+    A2() { cout << "call A default constructor." << endl; }
+    explicit A2(int x)
     {
-        cout << "int A one parameter constructor." << endl;
+        cout << "call A one parameter constructor." << endl;
         value = x;
-        cout << "The value is " << value << endl;
+    }
+    int getValue() { return this->value; }
+    void operator=(int x)
+    {
+        cout << "call A operator= method." << endl;
+        value = x;
     }
 };
 
@@ -21,22 +26,34 @@ class B2
 private:
     A2 a;
 public:
-    //#1
-//    B2()
-//    {
-//        cout << "int B default constructor #1." << endl;
-//        //A2 a(3);
-//        A2 a = 3;
-//    }
+    B2()
+    {
+        cout << "call B default constructor." << endl;
+        // #1, invoke A2(int)
+        //a = A2(3);
+        // #2, A2(int) is declared as explicit, and invoke A2 operator=
+        a = 3;
+    }
 
-    //#2
-    B2() : a(3) { cout << "int B default constructor #2." << endl; }
+    B2(int i) : a(i)
+    {
+        cout << "call B one parameter constructor." << endl;
+    }
+
+    void display()
+    {
+        cout << "value: " << a.getValue() << endl;
+    }
 };
 
 int cls_var_init_main(void)
-//int main(void)
+//t main(void)
 {
-    B2 b;
+    B2 b1; // sequence: A2() -> B2() -> A2(int)
+    b1.display();
+    cout << endl;
+    B2 b2 = 10; // sequence: A2(int) -> B2(int)
+    b2.display();
 
     return 0;
 }

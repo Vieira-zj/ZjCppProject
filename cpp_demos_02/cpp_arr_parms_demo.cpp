@@ -19,7 +19,12 @@ void print_arr_2(int arr[], int len)
 
 void print_arr_3(int (&arr)[5])
 {
-    cout << "array size ---> " << sizeof(arr) << endl;
+    int len = sizeof(arr) / sizeof(int);
+    cout << "array size ---> " << len << endl;
+    for (int i = 0; i < len; ++i)
+    {
+        cout << "item ---> " << arr[i] << endl;
+    }
 }
 
 // error
@@ -28,13 +33,13 @@ void print_arr_3(int (&arr)[5])
 //    cout << "array size ---> " << sizeof(arr) << endl;
 //}
 
-int arr_parms_main(void)
+int arr_params_main(void)
 //int main(void)
 {
     int tmp_arr[5] = {1,2,3,4,5};
     print_arr_1(tmp_arr);
     print_arr_2(tmp_arr, 5);
-    print_arr_3(tmp_arr);
+    print_arr_3(tmp_arr); // 20
 //    print_arr_4(tmp_arr);
 
     return 0;

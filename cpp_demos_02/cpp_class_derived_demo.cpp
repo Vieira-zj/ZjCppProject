@@ -35,18 +35,14 @@ class Bottom : public Left, public Right
     int w;
 public:
     Bottom() { cout << "Default Bottom" << endl; }
-//    Bottom(int i, int j,int k,int m) : Top(i),Left(i,j),Right(i,k),w(m)
-//    {
-//        cout << "Bottom" << endl;
-//    }
 };
 
 int class_derived_main(void)
 //int main(void)
 {
     Bottom b;
-    cout << "sizeof(b) " << sizeof(b) << "," << sizeof(Bottom) << endl;
-    cout << sizeof(Left) << "," << sizeof(Right) << "," << sizeof(Top) << endl;
+    cout << "sizeof(b) " << sizeof(b) << "," << sizeof(Bottom) << endl; // 20
+    cout << sizeof(Left) << "," << sizeof(Right) << "," << sizeof(Top) << endl; // 8,8,4
 
     return 0;
 }
