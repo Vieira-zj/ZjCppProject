@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+
 #include "coordin.h"
 
 polar rect_to_polar(rect xypos)

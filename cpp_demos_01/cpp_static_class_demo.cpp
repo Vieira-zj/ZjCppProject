@@ -23,9 +23,11 @@ public:
     static int ShowTotal();
 };
 
+// static field
 template<typename T>
 int Circle<T>::total = 0;
 
+// static method
 template<typename T>
 int Circle<T>::ShowTotal()
 {
@@ -44,7 +46,7 @@ int static_class_main(void)
     cout << "B.radius = " << B.Get_Radius() << endl;
     cout << "B.Girth = " << B.Get_Girth() << endl;
     cout << "B.Area = " << B.Get_Area() << endl;
-    cout << "Total1=" << Circle<int>::ShowTotal() << endl;
+    cout << "Total1=" << Circle<int>::ShowTotal() << endl; // 2
     cout << endl;
 
     Circle<double> X(6.23), Y(10.5), Z(25.6);
@@ -56,7 +58,7 @@ int static_class_main(void)
     cout << "Y.Area = " << Y.Get_Area() << endl;
     cout << "Z.Girth=" << Z.Get_Girth() << endl;
     cout << "Z.Area = " << Z.Get_Area() << endl;
-    cout << "Total2=" << Circle<double>::ShowTotal() << endl;
+    cout << "Total2=" << Circle<double>::ShowTotal() << endl; // 3
 
     return 0;
 }

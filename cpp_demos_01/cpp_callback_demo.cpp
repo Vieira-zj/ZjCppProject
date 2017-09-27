@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void callBakFunc(int &v)
+void callBackFunc(int &v)
 {
     cout << v << ",";
 }
@@ -16,6 +16,7 @@ int comp(const int &a, const int &b)
 }
 
 int callback_main(void)
+//int main(void)
 {
     vector<int> v(5);
     for (int i = 0; i < 5; ++i)
@@ -27,17 +28,17 @@ int callback_main(void)
     {
         cout << v[i] << ",";
     }
-    cout << endl;
+    cout << endl; // 1,7,4,0,9,
 
-    for_each(v.begin(), v.end(), callBakFunc);
-    cout << endl;
+    for_each(v.begin(), v.end(), callBackFunc);
+    cout << endl; // 1,7,4,0,9,
 
     sort(v.begin(), v.end(), comp);
     for (int i = 0; i < 5; ++i)
     {
         cout << v[i] << ",";
     }
-    cout << endl;
+    cout << endl; // 0,1,4,7,9,
 
     return 0;
 }

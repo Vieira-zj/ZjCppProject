@@ -65,14 +65,15 @@ int cpp_swap_main(void)
     int m = 1, n = 2;
     int *p1 = &m;
     int *p2 = &n;
+    // address diff from in swap()
     cout << "p1 address out swap() --> " << &p1 << endl;
     cout << "p2 address out swap() --> " << &p2 << endl;
     swapp2(p1, p2);
     cout << "m = " << m << endl;
     cout << "n = " << n << endl;
 
-    cout << my_max(a, b) << endl;
-    cout << my_max<>(a, b) << endl;
+    cout << my_max(a, b) << endl; // call int method
+    cout << my_max<>(a, b) << endl; // call template method
     cout << my_max(3.0, 4.0) << endl;
     cout << my_max(3.0, 4) << endl;
     cout << my_max(5.0, 6.0, 7.0) << endl;

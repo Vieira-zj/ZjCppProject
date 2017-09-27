@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void simon(int);  // declare function
+void simon(int); // declare function
 
 int function_main(void)
 {
@@ -14,7 +14,7 @@ int function_main(void)
     return 0;
 }
 
-void simon(int n)  // define function
+void simon(int n) // define function
 {
     cout << "Simon says touch you toes " << n << " times." << endl;
 }

@@ -25,19 +25,21 @@ public:
 };
 
 int override_main(void)
+//int main(void)
 {
-    // method 1, init object
+    // #1, init object from heap
 //    Rect *rp = new Rect;
 //    Shape *sp = rp;
 
-    // method 2, init object
+    // #2, init object from stack
     Rect r;
     Rect* rp = &r;
     Shape* sp = &r;
 
-    r.draw();
-    rp->draw();
-    sp->draw();  // 1
+    r.draw(); // 2
+    rp->draw(); // 2
+    // var "top" value not be override, this value set at compile time
+    sp->draw(); // 1
 
     return 0;
 }

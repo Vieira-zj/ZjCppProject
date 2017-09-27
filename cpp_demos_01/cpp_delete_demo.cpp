@@ -6,12 +6,13 @@ using namespace std;
 char * getname(void);
 
 int delete_main(void)
+//int main(void)
 {
     char * name;
 
     name = getname();
     cout << name << " at " << (int *) name << "\n";
-    delete [] name;
+    delete [] name; // delete char array
 
     name = getname();
     cout << name << " at " << (int *) name << "\n";

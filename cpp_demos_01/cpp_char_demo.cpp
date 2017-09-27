@@ -5,6 +5,7 @@
 #include<iostream>
 
 int char_main(void)
+//int main(void)
 {
     using namespace std;
 
@@ -13,7 +14,7 @@ int char_main(void)
     cout << "The ASCII code for " << ch << " is " << i << endl;
 
     cout << "Add one to the char code." << endl;
-    ch = ch + 1;
+    ch = ch + 1; // 'N'
     cout << "The ASCII code for " << ch << " is " << int(ch) << endl;
 
     return 0;

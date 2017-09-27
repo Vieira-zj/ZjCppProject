@@ -14,11 +14,12 @@ public:
 };
 
 int class_this_main(void)
+//int main(void)
 {
     using namespace std;
 
     MyClass cls(9);
-    cout << "Output: " << cls.Get_A() << endl;
+    cout << "Output: " << cls.Get_A() << endl; // 9
 
     return 0;
 }
