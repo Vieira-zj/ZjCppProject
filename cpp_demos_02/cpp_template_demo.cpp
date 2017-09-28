@@ -27,6 +27,7 @@ int template_main_ex(void)
 {
     int a = 1;
     int b = 2;
+
     cout << my_max_ex(a, b) << endl;
     cout << my_max_ex<>(a, b) << endl;
     //cout << my_max_ex(3, 4.0) << endl;

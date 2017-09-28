@@ -8,17 +8,18 @@ int r_reference_main(void)
 //int main(void)
 {
     int i = 77;
+
     lfn(i);
-    //lfn(99);  // error, right value arg
+    //lfn(99); // error, right value arg
 
     lfn_c(i);
     lfn_c(99);
 
-    //rfn(i);  // error, left value arg
+    //rfn(i); // error, left value arg
     rfn(99);
 
 //    const int x = 88;
-//    rfn(x);  // error
+//    rfn(x); // error, left value arg
 
     return 0;
 }

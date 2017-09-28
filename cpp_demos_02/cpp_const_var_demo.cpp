@@ -17,8 +17,8 @@ int my_add_const_r(const int &a, const int &b)
     return a + b;
 }
 
-//int const_var_main(void)
-int main(void)
+int const_var_main(void)
+//int main(void)
 {
     cout << my_add_const_r(1, 2) << endl;
 

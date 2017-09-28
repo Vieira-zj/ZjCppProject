@@ -4,27 +4,27 @@ using namespace std;
 
 typedef struct
 {
-    double salary;  // 8
-    int index[4];  // 16
+    double salary; // 8
+    int index[4]; // 16
 } test_data_x;
 
 typedef struct
 {
-    test_data_x test_1;  // 24
-    int test_2;  // 8
+    test_data_x test_1; // 24
+    int test_2; // 8
 } test_data_x2;
 
 typedef struct
 {
-    int index[4];  // 16
-    double store_1;  // 8
-    int store_2;  // 8
+    int index[4]; // 16
+    double store_1; // 8
+    int store_2; // 8
 } test_data_3;
 
 typedef struct
 {
-    test_data_3 test_3;  // 32
-    int test_4;  // 8
+    test_data_3 test_3; // 32
+    int test_4; // 8
 } test_data_4;
 
 inline int my_func_min(int a, int b)

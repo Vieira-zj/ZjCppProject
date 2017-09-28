@@ -26,7 +26,7 @@ public:
     {
         foo();
     }
-    void foo(void)
+    virtual void foo(void)
     {
         cout << "Derived::foo(void)" << endl;
     }
@@ -35,11 +35,11 @@ public:
 int constructor_main2(void)
 //int main(void)
 {
-    Base2 *pB = new Derived2;
-    pB->callFoo();
+    Base2 *pB = new Derived2; // Base::foo(), Drived::foo()
+    pB->callFoo(); // Drived::foo()
     if (pB)
     {
-        delete(pB);
+        delete pB;
     }
 
     return 0;

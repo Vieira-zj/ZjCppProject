@@ -17,7 +17,7 @@ void display(const string &str)
 int swap_main2(void)
 //int main(void)
 {
-    // example 01
+    // example 01, no change
     int a = 1, b = 2;
 
     cout << "a = " << &a << endl;
@@ -26,7 +26,7 @@ int swap_main2(void)
     cout << "a = " << &a << endl;
     cout << "b = " << &b << endl;
 
-    // example 02
+    // example 02, change
     int x = 2, y = 3;
     int *p1 = &x;
     int *p2 = &y;
@@ -42,14 +42,15 @@ int swap_main2(void)
 
     // example 03
     int arr[5] = {1,2,3,4,5};
-    cout << "size of arr[5] : " << sizeof(arr) << endl;
+    cout << "size of arr[5]: " << sizeof(arr) << endl; // 20
+    cout << "length of arr: " << sizeof(arr) / sizeof(int) << endl;
 
     // example 04
     int *pn = new int(100);
     cout << "p value " << *pn << endl;
-    delete(pn);
+    delete pn;
 
-    // int &pr = new int(100);
+    //int &pr = new int(100); // error
 
     // example 05
     string str = string("hello");

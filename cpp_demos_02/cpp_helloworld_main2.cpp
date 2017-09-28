@@ -28,12 +28,12 @@ int hello_world_main2(void)
 
     n  = 20;
     cout << n << endl;
-    fn();
+    fn(); // 21
 
-    cout << "The size of array: " << sizeof(arr) << endl;  // 16
-    cout << "The size of double: " << sizeof(d) << endl;  // 8
-    cout << "The size of test_data: " << sizeof(test_data) << endl;  // 8 + 16 = 24
-    cout << "The size of test_data_2: " << sizeof(test_data_2) << endl;  // 8 + 16 + 8 = 32
+    cout << "The size of array: " << sizeof(arr) << endl; // 16
+    cout << "The size of double: " << sizeof(d) << endl; // 8
+    cout << "The size of test_data: " << sizeof(test_data) << endl; // 8 + 16 = 24
+    cout << "The size of test_data_2: " << sizeof(test_data_2) << endl; // 24 + 8 = 32
 
     return 0;
 }

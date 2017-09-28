@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Base1
@@ -6,8 +7,8 @@ class Base1
 private:
     int _x;
 public:
-    Base1(int x) : _x(x) { cout << "Base(x) _x=" << _x << endl; }
     Base1() {}
+    Base1(int x) : _x(x) { cout << "Base(x) _x=" << _x << endl; }
 };
 
 class DerivedA: virtual public Base1
@@ -55,6 +56,7 @@ public:
 int constructor_main(void)
 //int main(void)
 {
+    // sequence: Base1 -> DerivedA -> DerivedB -> Other -> DerivedFinal
     DerivedFinal df;
 
     return 0;
