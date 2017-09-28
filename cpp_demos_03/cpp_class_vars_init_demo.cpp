@@ -20,9 +20,9 @@ public:
         value = input_val;
     }
 
-    AA01 operator=(const int input_val)
+    AA01 operator=(int input_val)
     {
-        cout << "AA01 operator=(const int) invoked" << endl;
+        cout << "AA01 operator=(int) invoked" << endl;
         value = input_val;
         return *this;
     }
@@ -79,21 +79,21 @@ public:
         value = input_val;
     }
 
-    // pass reference!
-    CC01(CC01 &cc)
+    // arg as reference
+    CC01(const CC01 &cc)
     {
         cout << "CC01(CC01) copy constructor invoked" << endl;
         value = cc.get_value();
     }
 
-    CC01 operator=(const int input_val)
+    CC01 operator=(int input_val)
     {
-        cout << "CC01 operator=(const int) invoked" << endl;
+        cout << "CC01 operator=(int) invoked" << endl;
         value = input_val;
         return *this;
     }
 
-    int get_value()
+    int get_value() const
     {
         return value;
     }
@@ -102,32 +102,33 @@ public:
 int cpp_class_vars_init_main(void)
 //int main(void)
 {
-    // #1, invoke constructor and operator=()
+    // #1, sequence: constructor -> operator=()
     AA01 a1;
     a1 = 2;
 
     AA01 a2(a1);
     printf("a2 value: %d\n", a2.get_value());
 
-    AA01 a3(3);
+    AA01 a3(3); // copy constructor
+    printf("a3 value: %d\n", a3.get_value());
     // Error when copy constructor is declared as explicit
 //    AA01 a4 = 3;
     printf("\n");
 
     // #2
-    BB01 b1;
+    BB01 b1; // a::constructor -> b::constructor -> a::=operator()
     b1.display_value();
 
-    BB02 b2;
+    BB02 b2; // a::constructor(int) -> b::constructor
     b2.display_value();
     printf("\n");
 
     // #3
-    CC01 c1(3);
+    CC01 c1(3); // c::constructor(int)
     printf("c1 value: %d\n", c1.get_value());
-    CC01 c2(c1);
+    CC01 c2(c1); // c::constructor(c)
     printf("c2 value: %d\n", c2.get_value());
-    CC01 c3 = c1;
+    CC01 c3 = c1; // c::constructor(c), it's ok when constructor declared without explicit
     printf("c3 value: %d\n", c3.get_value());
 
     return 0;

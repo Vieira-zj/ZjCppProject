@@ -3,7 +3,7 @@
 
 using namespace std;
 
-extern int my_external_int;  // from demo01
+extern int my_external_int; // from demo01
 
 int my_external_demo_add(int num);
 

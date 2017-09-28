@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class CExample
@@ -6,7 +7,7 @@ class CExample
 private:
     int a;
 public:
-    //构造函数
+    // 构造函数
     CExample(int b = 0)
     {
         a = b;
@@ -17,7 +18,7 @@ public:
 //        cout << "a: " << a << endl;
 //    }
 
-    //拷贝构造函数
+    // 拷贝构造函数
     CExample(const CExample& C)
     {
         a = C.a;
@@ -31,7 +32,7 @@ public:
         return *this;
     }
 
-    //一般函数
+    // 一般函数
     void Show()
     {
         cout << a << endl;
