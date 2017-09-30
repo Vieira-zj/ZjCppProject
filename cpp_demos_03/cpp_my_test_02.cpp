@@ -33,9 +33,9 @@ public:
     }
 
     // Ò»°ãº¯Êý
-    void Show()
+    void Show() const
     {
-        cout << a << endl;
+        cout << "value:" << a << endl;
     }
 
     ~CExample()
@@ -58,14 +58,18 @@ void g_Show(CExample C)
 int my_test_main2(void)
 //int main(void)
 {
-    CExample ret;
+    cout << "example 1" << endl;
+    CExample ret; // constructor
     ret.Show();
-    g_Show(ret);
+    g_Show(ret); // copy constructor
 
-//    CExample temp(5);
-//    ret = temp;
+    cout << endl << "example 2" << endl;
+    CExample temp(5); // constructor
+    ret = temp; // =operator()
 
-//    ret = g_Fun();
+    cout << endl << "example 3" << endl;
+    CExample tmp_c = g_Fun();
+    tmp_c.Show();
 
     return 0;
 }

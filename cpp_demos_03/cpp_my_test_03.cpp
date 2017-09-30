@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Base4
@@ -27,21 +28,24 @@ public:
 int my_test_main3(void)
 //int main(void)
 {
-//    Base4* pB = new Derived4();
-//    pB->callFoo();
-//    if(pB) delete pB;
+    cout << "test virtual function: " << endl;
+    // sequence: base::foo() -> derived::foo() -> derived::foo()
+    Base4* pB = new Derived4();
+    pB->callFoo();
+    if(pB) delete pB;
 
 
-//    int i = 10;
-//    int &r = i;
-//    r = 100;
-//    cout << "r: " << r << " i: " << i << endl;
+    cout << endl << "test reference value: " << endl;
+    int i = 10;
+    int &r = i;
+    r = 100;
+    cout << "r: " << r << ", i: " << i << endl;
 
 
-//    string a = "ZJ";
-//    string b = "ZJ";
-//    if (a == b) cout << "true" << endl;
-//    else cout << "false" << endl;
+    cout << endl << "test reference equals: " << endl;
+    string a = "ZJ";
+    string b = "ZJ";
+    cout << "results: " << ((a == b) ? true : false) << endl;
 
     return 0;
 }
