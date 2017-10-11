@@ -91,6 +91,7 @@
 		<Unit filename="cpp_demos_03/cpp_sort_demo04.cpp" />
 		<Unit filename="cpp_demos_03/cpp_string_demo.cpp" />
 		<Unit filename="cpp_demos_03/cpp_string_header_demo.h" />
+		<Unit filename="cpp_demos_03/cpp_vir_fn_demo01.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
