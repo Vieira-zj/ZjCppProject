@@ -19,7 +19,7 @@ int get_first_index_for_sub_string(char target_str[], int target_len, char sub_s
     return -1;
 }
 
-int sort_main4()
+int algorithm_main2(void)
 //int main(void)
 {
     // get the first index for sub string in target string
