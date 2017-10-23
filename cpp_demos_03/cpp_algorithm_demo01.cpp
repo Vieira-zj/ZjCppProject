@@ -90,6 +90,55 @@ void prime(int num)
     cout << num << " is prime: false" << endl;
 }
 
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+void print_stars(int lines)
+{
+    for (int i = 1; i <= lines; ++i)
+    {
+        for (int j = 0; j < i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+// * * * * * * * * *
+//   * * * * * * *
+//     * * * * *
+//       * * *
+//         *
+void print_stars_2(int lines)
+{
+    int total = lines * 2 - 1;
+    int cur_line = lines;
+    int spaces_num, stars_num;
+
+    for (int i = 1; i <= lines; ++i, --cur_line)
+    {
+        stars_num = cur_line * 2 - 1;
+        spaces_num = (total - stars_num) / 2;
+
+        for (int x = 0; x < spaces_num; ++x)
+        {
+            cout << "  ";
+        }
+        for (int y = 0; y < stars_num; ++y)
+        {
+            cout << "* ";
+        }
+        for (int z = 0; z < spaces_num; ++z)
+        {
+            cout << "  ";
+        }
+        cout << endl;
+    }
+}
+
 
 //int algorithm_main1(void)
 int main(void)
@@ -116,10 +165,22 @@ int main(void)
         palindrome(12321);
     }
 
-    bool is_prime = true;
+    bool is_prime = false;
     if (is_prime)
     {
         prime(29);
+    }
+
+    bool is_print_stars = false;
+    if (is_print_stars)
+    {
+        print_stars(5);
+    }
+
+    bool is_print_stars_2 = false;
+    if (is_print_stars_2)
+    {
+        print_stars_2(5);
     }
 
     return 0;
