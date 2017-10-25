@@ -140,8 +140,8 @@ void print_stars_2(int lines)
 }
 
 
-//int algorithm_main1(void)
-int main(void)
+int algorithm_main1(void)
+//int main(void)
 {
     // decimal to octal
     bool is_decimal_to_octal = false;
