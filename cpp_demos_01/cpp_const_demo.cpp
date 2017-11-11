@@ -44,4 +44,6 @@ int ref_main(void)
     cout << "r = " << r << endl; // 10
     a = 100;
     cout << "r = " << r << endl; // 100
+
+    return 0;
 }

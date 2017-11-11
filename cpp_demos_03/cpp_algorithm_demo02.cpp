@@ -1,3 +1,4 @@
+#include <iostream>
 #include <stdio.h>
 
 // get the first index for sub string in target string.
@@ -52,7 +53,8 @@ void print_string(const char * const str)
     printf("\n");
 }
 
-void del_char(char *str, char c)
+// delete specified char in string
+void del_char_in_str(char *str, char c)
 {
     int j = 0;
     for (int i = 0; str[i]; ++i)
@@ -86,6 +88,33 @@ void odd_even_sort(int *pData, int len)
     }
 }
 
+// combine two sorted arrays
+int* merge_sorted_array(int *arr1, int len1, int *arr2, int len2)
+{
+    int *ret_arr = new int[len1 + len2];
+    int i = 0, j = 0, k = 0;
+
+    while (i < len1 && j < len2)
+    {
+        if (arr1[i] <= arr2[j]) {
+            ret_arr[k++] = arr1[i++];
+        } else {
+            ret_arr[k++] = arr2[j++];
+        }
+    }
+
+    while (i < len1)
+    {
+        ret_arr[k++] = arr1[i++];
+    }
+    while (j < len2)
+    {
+        ret_arr[k++] = arr2[j++];
+    }
+
+    return ret_arr;
+}
+
 
 int algorithm_main2(void)
 //int main(void)
@@ -98,7 +127,7 @@ int algorithm_main2(void)
         char sub[] = {'a','b','c'};
         int sub_len = 3;
         int first_idx = sub_string(target, target_len, sub, sub_len);
-        printf("The first index: %d", first_idx);
+        printf("first index: %d", first_idx);
     }
 
     bool is_sub_string2 = false;
@@ -114,9 +143,9 @@ int algorithm_main2(void)
     bool is_del_char = false;
     if (is_del_char)
     {
-        char str[] = "abcdef";
+        char str[] = "abcddefd";
         print_string(str);
-        del_char(str, 'd');
+        del_char_in_str(str, 'd');
         printf("%s\n", str);
     }
 
@@ -132,6 +161,24 @@ int algorithm_main2(void)
             printf("%d ", input_arr[i]);
         }
         printf("\n");
+    }
+
+    bool is_merge_sorted_array = true;
+    if (is_merge_sorted_array)
+    {
+        using namespace std;
+
+        int arr1[] = { 1,2,2,3,5,6,7,7 };
+        int arr2[] = { 1,2,4,5,8,8,9,10,11,12,12,13,14 };
+        int len1 = sizeof(arr1) / sizeof(int);
+        int len2 = sizeof(arr2) / sizeof(arr2[0]);
+        int *ret_arr = merge_sorted_array(arr1, len1, arr2, len2);
+
+        for (int i = 0, len = len1 + len2; i < len; ++i)
+        {
+            cout << ret_arr[i] << " ";
+        }
+        cout << endl;
     }
 
     return 0;
